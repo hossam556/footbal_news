@@ -2,6 +2,7 @@ import axios from 'axios';
 import React ,{useState,useEffect}from 'react'
 import classes from '../styles/news.module.css'
 import NewsCard from './NewsCard'
+import {newss} from '../data'
 
 const News = () => {
     const[news ,setNews] = useState([])
@@ -9,7 +10,7 @@ const News = () => {
     useEffect(()=>{
           
               
-              axios.get('http://80.240.21.204:1337/news?limit=10').then(response=>{
+              axios.get('http://80.240.21.204:1337/news?limit=15').then(response=>{
                   setNews(response.data.news)
               }).catch(error=>{
               })
@@ -17,7 +18,7 @@ const News = () => {
 
      let newsData = 'WAIT FOR NEWS' ;
      if(news){
-         newsData =news.map(item=><span key={item._id}>
+         newsData =newss.map(item=><span key={item._id}>
             <NewsCard 
              image={item.source.url}
              title={item.source.title}
