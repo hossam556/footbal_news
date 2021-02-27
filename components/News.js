@@ -13,7 +13,7 @@ const News = () => {
              setTotal(response.data.totalNews)  ;
           })
               
-              axios.get(`http://80.240.21.204:1337/news?skip=12&limit=1000`).then(response=>{
+              axios.get(`http://80.240.21.204:1337/news?skip=20&limit=20`).then(response=>{
                   setNews(response.data.news)
               }).catch(error=>{
               })
