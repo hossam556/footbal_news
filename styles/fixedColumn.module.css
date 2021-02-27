@@ -1,0 +1,10 @@
+.col{
+    flex: 1;
+    margin-top: 20px;
+    background-color: white;
+}
+@media(max-width:750px) {
+    .col{
+        display: none;
+    }
+}

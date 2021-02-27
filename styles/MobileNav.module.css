@@ -1,0 +1,29 @@
+.nav{
+    display: flex;
+    align-items: center;
+    background-color: #03a86a;
+    color: white;
+    justify-content: space-between;
+    padding-right: 35px;
+    padding-left: 30px;
+    position: relative;
+
+}
+@media(min-width: 751px){
+    .nav{
+         display: none;
+    }
+}
+.input{
+    padding: 7px 50px;
+    border-radius: 15px;
+    border-color: #03a86a;
+}
+
+.icon{
+    position: absolute;
+    top:50% ;
+    left: 50%;
+    color: #03a86a;
+    transform: translate(-480%, -40%);
+}

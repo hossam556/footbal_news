@@ -1,0 +1,40 @@
+.modal{
+    height: 100%;
+    width: 70%;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+@media(min-width: 751px){
+    .nav{
+         display: none;
+    }
+}
+.a1{
+    background-color: #03a86a;
+    color: white;
+    text-align: center;
+    padding: 8px 15px;
+    border: 1px solid white;
+    border-radius: 30px;
+    font-weight: bold;
+    width: 50%;
+}
+.a2{
+    background-color:white ;
+    color: #03a86a;
+    padding: 8px 15px;
+    border: 1px solid #03a86a;
+    border-radius: 30px;
+    font-weight: bold;
+    width: 50%;
+    text-align: center;
+    margin-top: 100px;
+}
