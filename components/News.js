@@ -17,7 +17,7 @@ const News = () => {
 
     return (
         <div className={classes.news}>
-            news
+            
             {news.map(item=><span key={item._id}>
                 <NewsCard 
                  image={item.source.url}
